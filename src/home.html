@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <img src="./Images/profile.jpg" alt="Profile Picture" class="profile">
+        <button class="hamburger-icon" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="About.html">About me</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li class="Contact"><a href="Contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Software Engineering Student</p>
+        <h1>I'M <span>Beliul Tilahun Birhanu</span></h1>
+      </div>
+    </div>
+  </header>
+  <main id="content">
+    <div class="additional-buttons">
+      <a href="#" onclick="navigateTo('Resume')" class="text-button" aria-label="Navigate to Resume">
+        <span class="button-text">Resume</span>
+        <span class="button-arrow">▼</span>
+      </a>
+      <a href="#" onclick="navigateTo('Gallery')" class="text-button" aria-label="Navigate to Gallery">
+        <span class="button-text">Gallery</span>
+        <span class="button-arrow">▼</span>
+      </a>
+      <a href="#" onclick="navigateTo('Testimonials')" class="text-button" aria-label="Navigate to Testimonials">
+        <span class="button-text">Testimonials</span>
+        <span class="button-arrow">▼</span>
+      </a>
+      <a href="#" onclick="navigateTo('Dark/Light Mode')" class="text-button" aria-label="Toggle Dark/Light Mode">
+        <span class="button-text">Dark/Light Mode</span>
+        <span class="button-arrow">▼</span>
+      </a>
+    </div>
+  </main>
+  <script src="home.js"></script>
+</body>
+</html>
