@@ -4,60 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education and Certificates</title>
-  <link rel="stylesheet" href="Education.css">
+  <link rel="stylesheet" href="./Education.css">
 </head>
 <body>
   <header>
-    <h1>Education and Certificates</h1>
+    <nav class="navbar">
+      <div class="profile-container">
+          <img src="./Images/profile.jpg" alt="Profile picture of Beliul Tilahun Birhanu" class="profile-pic">
+      </div>
+      <div class="nav-links">
+          <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./About.html" >About</a></li>
+              <li><a href="./Education.html" class="active">Education</a></li>
+              <li><a href="./Projects.html">Projects</a></li>
+              <li><a href="./Contacts.html">Contact</a></li>
+          </ul>
+      </div>
+      
+  </nav>
+  </header>
+  <header>
+    <div class="header-h1">
+      <h1>Education and Certificates</h1>
+
+    </div>
+    
   </header>
 
   <main class="content">
     <!-- Video Section -->
     <section class="video-section">
-      <header>
-        <h2>Video Overview</h2>
-      </header>
-      <video controls>
-        <source src="assets/Videos/Edu-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-description">
-        <p>
-          My educational journey has been a blend of formal education and continuous self-learning. 
-          Over the years, I have completed various certifications in web development, programming, 
-          and design that have honed my skills and prepared me to take on complex challenges in the tech industry.
-        </p>
-        <p>
-          These achievements highlight my commitment to growth, and I’m excited to apply this knowledge to future projects.
-        </p>
+      <p class="intro-text">
+        My educational journey has been a blend of formal education and continuous self-learning. 
+        Over the years, I have completed various certifications in web development, programming, 
+        and design that have honed my skills and prepared me to take on complex challenges in the tech industry.
+      </p>
+      <div class="video-container">
+        <video controls>
+          <source src="./Videos/Edu-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-description">
+          <p>
+            These achievements highlight my commitment to growth, and I’m excited to apply this knowledge to future projects.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Certificates Gallery Section -->
     <section class="images-section">
-      <header>
+      <!-- <header>
         <h2>Certificates Gallery</h2>
-      </header>
+      </header> -->
       <div class="image-grid">
-        <figure>
+        <!-- Left 35% -->
+        <figure class="large-figure">
           <img src="./Images/IELTS.jpg" alt="IELTS Certificate" loading="lazy">
           <figcaption>English Proficiency Exam</figcaption>
         </figure>
-        <figure>
-          <img src="./Images/Volunteer.jpg" alt="Volunteer Certificate" loading="lazy">
-          <figcaption>Volunteer Work</figcaption>
-        </figure>
-        <figure>
-          <img src="./Images/Crt.jpg" alt="Appreciation Certificate" loading="lazy">
-          <figcaption>Certificate of Appreciation</figcaption>
-        </figure>
-        <figure>
-          <img src="./Images/NationalExam.jpg" alt="National Exam Recognition Certificate" loading="lazy">
-          <figcaption>Certificate of Recognition for National Exam Performance</figcaption>
-        </figure>
+        <!-- Right 65% -->
+        <div class="right-grid">
+          <div class="top-row">
+            <figure>
+              <img src="./Images/Volunteer.jpg" alt="Volunteer Certificate" loading="lazy">
+              <figcaption>Volunteer Appreciation Certificate</figcaption>
+            </figure>
+            <figure>
+              <img src="./Images/Crt.jpg" alt="Appreciation Certificate" loading="lazy">
+              <figcaption>Certificate of Appreciation</figcaption>
+            </figure>
+          </div>
+          <figure class="bottom-center">
+            <img src="./Images/NationalExam.jpg" alt="National Exam Recognition Certificate" loading="lazy">
+            <figcaption>Certificate of Recognition for National Exam Performance</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
-  <script src="Education.js"></script>
+  <script src="./Education.js"></script>
 </body>
 </html>

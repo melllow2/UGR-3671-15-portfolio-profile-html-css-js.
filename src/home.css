@@ -1,0 +1,269 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #74345e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .profile {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #ff004f;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  
+  
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  hr {
+    width: 80%;
+    justify-self: center;
+  }
+  
+  /* Header Text */
+  .header-text {
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .header-text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .header-text h1 {
+    font-size: 45px;
+  }
+  
+  .header-text h1 span {
+    color: #ff004f;
+  }
+  
+  /* Additional Buttons */
+  .additional-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 70px;
+    padding-right: 15%;
+    width: 100%;
+  }
+  
+  .text-button {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  
+  .text-button:hover .button-text {
+    font-weight: bold;
+    color: #ff004f;
+  }
+  
+  .text-button:hover .button-arrow {
+    color: #ff004f;
+  }
+  
+  /* Media Queries */
+  
+  /* Mobile Portrait (max-width: 428px) */
+  @media (max-width: 428px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .hamburger-icon {
+      display: block;
+    }
+  
+    .profile {
+      order: 2;
+      margin: 10px 20px 0 0;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      padding: 10px 0;
+      position: absolute;
+      top: 60px;
+      right: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    hr {
+      display: none;
+    }
+  }
+  
+  /* Mobile Landscape (max-width: 926px) and (orientation: landscape) */
+  @media (max-width: 926px) and (orientation: landscape) {
+    .navbar {
+      flex-direction: column;
+      width: 30%;
+      align-items: flex-start;
+      position: absolute;
+      height: 100vh;
+    }
+  
+    .profile {
+      margin: 20px 0;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      text-align: left;
+      margin-left: 20px;
+      margin-bottom: 80%;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    hr {
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      left: 30%;
+    }
+  
+    #content {
+      margin-left: 30%;
+    }
+  }
+  
+  /* Tablet Portrait (max-width: 834px) */
+  @media (max-width: 834px) and (orientation: portrait) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .hamburger-icon {
+      display: none;
+    }
+  
+    .nav-links {
+      display: flex;
+    }
+  
+    hr {
+      display: none;
+    }
+  }
+  
+  /* Tablet Landscape (max-width: 1194px) and (orientation: landscape) */
+  @media (max-width: 1194px) and (orientation: landscape) {
+    .navbar {
+      flex-direction: column;
+      width: 30%;
+      align-items: flex-start;
+      position: absolute;
+      height: 100vh;
+    }
+  
+    .profile {
+      margin: 20px 0;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      text-align: left;
+      margin-left: 20px;
+      margin-bottom: 80%;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    hr {
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      left: 30%;
+    }
+  
+    .header-text {
+      margin-left: 40%;
+    }
+  
+    #content {
+      margin-left: 30%;
+    }
+  }
+  

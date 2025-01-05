@@ -4,24 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Projects</title>
-  <link rel="stylesheet" href="Projects.css">
+  <link rel="stylesheet" href="./Projects.css">
 </head>
 <body>
   <header>
-    <h1>My Projects</h1>
-  </header>
+    <!-- <div class="container"> -->
+      <nav class="navbar">
+          <div class="profile-container">
+              <img src="./Images/profile.jpg" alt="Profile picture of Beliul Tilahun Birhanu" class="profile-pic">
+          </div>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="./home.html">Home</a></li>
+                  <li><a href="./About.html">About</a></li>
+                  <li><a href="./Education.html">Education</a></li>
+                  <li><a href="./Projects.html" class="active">Project</a></li>
+                  <li><a href="./Contacts.html">Contact</a></li>
+              </ul>
+          </div>
+          
+      </nav>
+  </div>
 
-  <main class="content">
+  </header>
+  <header>
+
+    <h1>My Projects</h1>
     <p>
       The following section showcases the projects I’ve worked on over time. Each one represents a step forward in my journey as a developer, highlighting the skills I’ve learned and the creativity I’ve applied to solve different problems.
     </p>
-    
+  </header>
+<main class="content">
+  <!-- Left Column -->
+  <div class="left-column">
     <!-- Project 1 -->
     <section class="project-container">
       <header>
         <h2>Shopping List Code in Java</h2>
       </header>
-      <img src="./Images/shop.jpg" alt="Screenshot of Shopping List Code in Java Project">
+      <img class="imgs"   src="./Images/shop.jpg" alt="Screenshot of Shopping List Code in Java Project">
       <div class="project-details">
         <p>
           A Java-based shopping list application demonstrating object-oriented programming principles. The program includes features for adding, removing, and managing shopping items efficiently.
@@ -35,7 +56,7 @@
       <header>
         <h2>Rock Paper Scissors Game</h2>
       </header>
-      <img src="./Images/paperscissors.jpg" alt="Screenshot of Rock Paper Scissors Game Project">
+      <img class="imgs" src="./Images/paperscissors.jpg" alt="Screenshot of Rock Paper Scissors Game Project">
       <div class="project-details">
         <p>
           A Python implementation of the classic Rock-Paper-Scissors game with a simple graphical interface. The project demonstrates basic Python logic and user interaction handling.
@@ -43,13 +64,15 @@
         <a href="https://github.com/melllow2/Python_rock-paper-scissors" class="github-button" target="_blank" rel="noopener noreferrer">View on GitHub</a>
       </div>
     </section>
+  </div>
 
-    <!-- Project 3 -->
-    <section class="project-container">
+  <!-- Right Column -->
+  <div class="right-column">
+    <section class="project-container large">
       <header>
         <h2>CSS Usage 101</h2>
       </header>
-      <img src="./Images/css.jpg" alt="Screenshot of CSS Usage 101 Project">
+      <img class="imgs" src="./Images/css1.jpg" alt="Screenshot of CSS Usage 101 Project">
       <div class="project-details">
         <p>
           A foundational project exploring the capabilities of CSS for styling. This project focuses on layout designs, animations, and responsive styling practices.
@@ -57,7 +80,8 @@
         <a href="https://github.com/melllow2/Assignment1_Beliul_Tilahun_Section1" class="github-button" target="_blank" rel="noopener noreferrer">View on GitHub</a>
       </div>
     </section>
-  </main>
-  <script src="Projects.js"></script>
+  </div>
+</main>
+<script src="./Projects.js"></script>
 </body>
 </html>

@@ -4,61 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
-  <link rel="stylesheet" href="contacts.css">
+  <link rel="stylesheet" href="./Contacts.css">
 </head>
 <body>
   <header>
-    <h1>Contact Me</h1>
-  </header>
-
-  <main>
-    <!-- Profile Section -->
-    <section class="header-section">
-      <img src="./Images/profile.jpg" alt="Profile Picture" class="avatar">
-      <div class="title-container">
-        <h2>Beliul Tilahun</h2>
-        <p>Software Engineering Student</p>
+    <nav class="navbar">
+      <div class="profile-container">
+          <img src="./Images/profile.jpg" alt="Profile picture of Beliul Tilahun Birhanu" class="profile-pic">
       </div>
-    </section>
+      <div class="nav-links">
+          <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./About.html">About</a></li>
+              <li><a href="./Education.html">Education</a></li>
+              <li><a href="./Projects.html">Projects</a></li>
+              <li><a href="./Contacts.html" class="active">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Contact Card -->
+    <div class="card">
+      <h1>Contact Me</h1>
+      <img src="./Images/profile.jpg" alt="Profile Picture" class="avatar">
+      <p>Software Engineering Student</p>
+      <h2>Beliul Tilahun Birhanu</h2>
+      <div class="social-icons">
+        <a href="https://github.com/melllow2" target="_blank">
+          <img src="./Images/Github.jpg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/beliul-berhanu-1a8293337/" target="_blank">
+          <img src="./Images/Linkedin.jpg" alt="LinkedIn">
+        </a>
+        <a href="mailto:tilahunbeliul@gmail.com" target="_blank">
+          <img src="./Images/Email.jpg" alt="Email">
+        </a>
+        <a href="https://www.instagram.com/bee_berhanu/" target="_blank">
+          <img src="./Images/instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://t.me/bel_tilahun" target="_blank">
+          <img src="./Images/telegram.jpg" alt="Telegram">
+        </a>
+      </div>
+    </div>
 
-    <!-- Social Media Section -->
-    <section class="socials">
-      <header>
-        <h2>Connect with Me</h2>
-      </header>
-      <ul>
-        <li>
-          <a href="https://github.com/melllow2" target="_blank" rel="noopener noreferrer">
-            <img src="./Images/Github.jpg" alt="GitHub Profile"> GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/beliul-berhanu-1a8293337/" target="_blank" rel="noopener noreferrer">
-            <img src="./Images/Linkedin.jpg" alt="LinkedIn Profile"> LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="mailto:tilahunbeliul@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="./Images/Email.jpg" alt="Email"> Email
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/bee_berhanu/" target="_blank" rel="noopener noreferrer">
-            <img src="./Images/instagram.jpg" alt="Instagram Profile"> Instagram
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/bel_tilahun" target="_blank" rel="noopener noreferrer">
-            <img src="./Images/telegram.jpg" alt="Telegram Profile"> Telegram
-          </a>
-        </li>
-      </ul>
-    </section>
+    <!-- Footer -->
+    <footer>
+      <p>Developed by <a href="./homeportfolio.html">Beliul Tilahun</a> © 2024</p>
+    </footer>
   </main>
-  <!-- Footer Section -->
-  <footer>
-    <p>Developed by <a href="./homeportfolio.html">Beliul Tilahun</a> © 2024</p>
-  </footer>
-  <script src="contacts.js"></script>
+  <script src="./Contacts.js"></script>
 </body>
 </html>
